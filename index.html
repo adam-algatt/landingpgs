@@ -8,12 +8,40 @@
 <body>
     <h1>Pages for QA</h1>
 
-    <ul>
-        <li><a href="./hyundai-vs-mach-e.html">mache vs hyundai</a></li>
-        <li><a href="./2023FordMustangMachEvs2023KiaEV6.html">Mache vs Hyundai diff styling</a></li>
-        <li><a href="./43-built-for-the-holidays.html">built for the holidays</a></li>
-        <li><a href="./skeleton-worked/32FordElectricVehicles.html">Ford Electric Vehicles</a></li>
-        <li><a href="./skeleton-worked/34FordMechanicNearMe.html">Ford Mechanic Near Me</a></li>
-        </ul>
+    <div class="list-container">
+        <ul class="site-list">
+            <li><a href="./hyundai-vs-mach-e.html">mache vs hyundai</a></li>
+            <li><a href="./2023FordMustangMachEvs2023KiaEV6.html">Mache vs Hyundai diff styling</a></li>
+            <li><a href="./43-built-for-the-holidays.html">built for the holidays</a></li>
+            <li><a href="./skeleton-worked/32FordElectricVehicles.html">Ford Electric Vehicles</a></li>
+            <li><a href="./skeleton-worked/34FordMechanicNearMe.html">Ford Mechanic Near Me</a></li>
+            </ul>
+
+    </div>
+   
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            .list-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20%;
+            }
+            .site-list {
+                list-style: none;
+            }
+            .site-list li{
+                font-size: 2em;
+                margin-top: 15px;
+            }
+            .site-list a{
+         
+                text-decoration: none;
+            }
+        </style>
 </body>
 </html>
