@@ -363,20 +363,19 @@
             </div>
         </div>
     </div>
+    
     <script>
 
        const jumboTitles =  document.getElementsByClassName("jumbo-title title-responsive");
        const titleOverlays = document.getElementsByClassName("jumbo-text-overlay");
-       console.log(jumboTitles,'\n', titleOverlays);
 
-       const a = [1,2,3]; 
-    console.log(a);
+    //    gives jumbo title nodelist forEach method
        jumboTitles.forEach = Array.prototype.forEach; 
 
+    // immediate function that sets text overlays W x H to match child header's dimensions (with a little padding )
        (()=> {
    
         jumboTitles.forEach((t, idx) => {
-            // console.log(title.offsetHeight, title.offsetWidth, '\n');
 
             let h = `${t.offsetHeight + 10}px`;
             let w = `${t.offsetWidth + 20}px`; 
